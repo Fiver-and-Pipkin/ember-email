@@ -4,7 +4,7 @@ Min-E-Mail
 
 by Debbie Cravey
 
-Min-E-Mail is a minimalist email client using EmberJS. It does not actually send and receive messages, but rather, demonstrates proof-of-concept by saving data to Local Storage. This app offers the user the ability to display emails in folders and add, edit, and create new messages.
+Min-E-Mail is a minimalist email client using EmberJS. It does not actually send and receive messages, but rather, demonstrates proof-of-concept by saving data to Local Storage. This app offers the user the ability to display email in folders and add, edit, and create new messages.
 
 Installation
 ------------

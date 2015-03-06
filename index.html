@@ -3,7 +3,7 @@
 <head>
   <title>Min-E-Mail</title>
   <script src="libs/jquery-1.11.2.js"></script>
-  <script src="css/js/bootstrap.min.js"></script>
+  <!-- // <script src="css/js/bootstrap.min.js"></script> -->
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -19,19 +19,19 @@
   <script src="store.js"></script>
 
   <script src="controllers/folders.js"></script>
-  <script src="controllers/emails.js"></script>
-  <script src="controllers/messages.js"></script>
+  <script src="controllers/email.js"></script>
+  <script src="controllers/message.js"></script>
 
 
   <script src="routes/folders.js"></script>
-  <script src="routes/emails.js"></script>
-  <script src="routes/messages.js"></script>
+  <script src="routes/email.js"></script>
+  <script src="routes/message.js"></script>
 
-  <script src="models/folder.js"></script>
   <script src="models/email.js"></script>
+  <script src="models/message.js"></script>
 
   <script>
-    EmberHandlebarsLoader.loadTemplates(['application', 'folders', 'emails', 'message']);
+    EmberHandlebarsLoader.loadTemplates(['application', 'folders', 'email', 'message']);
   </script>
 </head>
 <body>
