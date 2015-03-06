@@ -1,4 +1,4 @@
-Email.emailController = Ember.ObjectController.extend({
+Email.EmailController = Ember.ObjectController.extend({
   actions: {
     save: function() {
       var message = this.store.createRecord('message', {
@@ -16,6 +16,7 @@ Email.emailController = Ember.ObjectController.extend({
       this.set('subject', null),
       this.set('body', null)
     },
+    
     delete: function(message) {
       if (confirm("Are you sure?")) {
       message.destroyRecord();
