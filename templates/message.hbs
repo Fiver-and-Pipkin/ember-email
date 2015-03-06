@@ -1,1 +1,30 @@
-<h3>help :()</h3>
+<h1> Message From {{address}} </h1>
+
+{{#if isEditing}}
+  <div class="container">
+    <form class="form">
+      <legend>Add Message to the {{title}} folder:</legend>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        {{input name="address" value=name type="text" placeholder="email address"}}
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        {{input name="subject" value=subject type="text"}}
+      </div>
+      <div class="form-group">
+        <label for="body">Message Body:</label>
+        {{input name="body" value=body type="text"}}
+      </div>
+
+      <button class="btn btn-default" {{action 'save'}}>Submit</button>
+    </form>
+  </div>
+
+{{else}}
+
+  <p>{{address}} {{subject}} {{body}}</p>
+    <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+    <button class="btn btn-danger" {{action 'delete' this}}>Delete</button>
+{{/if}}
