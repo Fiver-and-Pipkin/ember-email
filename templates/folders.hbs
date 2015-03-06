@@ -20,8 +20,9 @@
 
 <br>
   {{#each}}
-    {{#link-to 'email' this.id}} <img {{bind-attr src = folderphoto}} height="164" width="164"> {{foldername}}{{/link-to}}
-    <button class="btn btn-xs btn-danger" {{action 'delete' this}}>Delete</button>
+    {{#link-to 'email' this.id}}<p> </p><img {{bind-attr src = folderphoto}} height="164" width="164">     {{foldername}}{{/link-to}}
+    <p><button class="btn btn-xs btn-danger" {{action 'delete' this}}>Delete</button>
+    <hr></p>
 
   {{/each}}
 

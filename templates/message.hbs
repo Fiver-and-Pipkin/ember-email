@@ -24,7 +24,7 @@
 
 {{else}}
 
-  <p>{{address}} {{subject}} {{body}}</p>
-    <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
-    <button class="btn btn-danger" {{action 'delete' this}}>Delete</button>
+  <p>Sender: {{address}} Subject: {{subject}} Message: {{body}}</p>
+    <button class="btn btn-xs btn-primary" {{action 'edit'}}>Edit</button>
+    <button class="btn btn-xs btn-danger" {{action 'delete' this}}>Delete</button>
 {{/if}}

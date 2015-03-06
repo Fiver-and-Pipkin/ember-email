@@ -16,7 +16,7 @@ Email.EmailController = Ember.ObjectController.extend({
       this.set('subject', null),
       this.set('body', null)
     },
-    
+
     delete: function(message) {
       if (confirm("Are you sure?")) {
       message.destroyRecord();
@@ -26,3 +26,10 @@ Email.EmailController = Ember.ObjectController.extend({
     }
   }
 });
+//
+// Email.Documenter.reopenClass({
+//   FIXTURES: [
+//     { id: 1, address: 'mom@irs.gov', body: 'Why do you never call?' },
+//     { id: 2,  address: 'susie@callme.org', body: 'You better get tested'}
+//   ]
+// });

@@ -23,8 +23,10 @@
   <ul class="list-group">
     {{#each item in messages}}
       <li class="list-group-item">
-        <p>{{#link-to 'message' item.id}}  {{item.address}} {{item.subject}} {{/link-to}}</p>
-        <button class="btn btn-danger" {{action 'delete' item}}>Delete</button>
+        {{#link-to 'message' item.id}}
+        Sender: {{item.address}} Subject:
+        {{item.subject}} {{/link-to}}
+        <button class="btn btn-xs btn-danger" {{action 'delete' item}}>Delete</button>
       </li>
     {{/each}}
   </ul>
